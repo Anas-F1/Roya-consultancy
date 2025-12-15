@@ -24,9 +24,10 @@ website:
   
 format:
   html:
-    theme:
-      - cosmos
-      - styles.scss
+    
+    theme: 
+    - cosmos
+    - styles.scss
     mainfont: Muna
     page-layout: full
 

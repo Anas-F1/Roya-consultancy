@@ -1,10 +1,11 @@
 ---
 title: "رؤية للاستشارات"
-subtitle: "نُحوِّل بياناتك إلى قرارات"
 format: 
   html: 
-    #template-partials: title-block.html
-    title-block-banner: true
+    template-partials:
+    - title-block.html
+title-block-banner: true
+subtitle: "نُحوِّل بياناتك إلى قرارات"
 image: ""
 about: 
   template: jolla
@@ -13,7 +14,7 @@ about:
   links:
     - icon: envelope
       text: Email
-      href: mailto:scsik@ucsb.edu
+      href: anas@gmail.com
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com

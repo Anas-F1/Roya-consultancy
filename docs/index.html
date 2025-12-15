@@ -90,22 +90,45 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">رؤية للاستشارات</h1>
-            <p class="subtitle lead">نُحوِّل بياناتك إلى قرارات</p>
-                      </div>
-  </div>
-  <div class="quarto-title-meta column-page">
-    </div>
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" style="position: relative">
+  <!-- This is the div in which the particles will be included -->
+  <div id="particles-js"></div>
+  <!-- Actual content on top of the particles-->
+  <div class="title-block-content">
+    <img src="./logo.png" alt="logo of company" width="80px" height="80px" style="margin-bottom: 20px">
+        <h1 class="title">رؤية للاستشارات</h1>
+         <p class="subtitle">نُحوِّل بياناتك إلى قرارات</p>
+         </div>
+  <!-- Particle.js script loaded from a CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <!-- use the particle js library with our own config (json file). -->
+  <script>
+    particlesJS.load("particles-js", "./particles.json");
+  </script>
+</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
 <div class="quarto-about-jolla content column-page">
  <main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<style>
+  #particles-js {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .title-block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+</style>
 <p>“هذا نص تجريبي يُستخدم عادةً لاختبار التنسيق والتصميم في الصفحات والمستندات. يمكن استبداله بأي محتوى لاحقًا دون أي مشكلة. يهدف هذا النص إلى ملء المساحة المتاحة وإظهار شكل الفقرة عند إدراج كمية من الكلمات المتتابعة. من المهم أن يكون النص واضحًا ومكررًا بشكل كافٍ لإظهار العناصر البصرية مثل الهوامش والمحاذاة وحجم الخط. كما يمكن استخدام هذا النص لقياس سلوك التصميم عند وجود فقرات طويلة في الصفحة.”</p>
 <p>“يستمر هذا النص التجريبي في تقديم محتوى يساعد المصممين والمطورين على معاينة شكل المستند قبل إضافة المحتوى الحقيقي. يمكن تكرار الفقرة أو تعديلها حسب الحاجة. يوفر النص مساحة كافية لاختبار العناوين، والفواصل، وقوائم العناصر، وجميع المكونات البصرية الأخرى. الهدف هو محاكاة نص حقيقي دون الالتزام بمعنى محدد.”</p>
 <p>لوريم إيبسوم هو نص شكلي يُستخدم في الطباعة والتنضيد منذ القرن الخامس عشر، عندما أخذ الطابعون مجموعة من الأحرف ووضعوها لتكوين صفحة نموذجية. هذا النص لا يحمل أي معنى ولكنه يُستخدم لملء المساحات في التصميم ليُظهر شكل الخطوط والتخطيط العام للصفحة. منذ ذلك الحين، أصبح لوريم إيبسوم معياراً في صناعة التصميم والطباعة.<br>
@@ -116,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 </main> 
   <hr class="about-sep">
    <div class="about-links">
-  <a href="mailto:scsik@ucsb.edu" class="about-link" rel="" target="">
+  <a href="/anas@gmail.com" class="about-link" rel="" target="">
     <i class="bi bi-envelope"></i>
      <span class="about-link-text">Email</span>
   </a>
