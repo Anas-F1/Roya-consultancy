@@ -1,20 +1,35 @@
 project:
   type: website
   output-dir: docs
-
+lang: ar
+dir: rtl
 website:
   title: "Test2"
+  search: false
+  favicon: logo.png
   navbar:
-    left:
+    title: false
+    logo: logo.png
+    logo-alt: "شعار رؤية للاستشارات"
+    right:
       - href: index.qmd
-        text: Home
-      - about.qmd
-
+        text: الرئيسية
+      - href: about.qmd
+        text: من نحن
+      - href: our-work.qmd
+        text: أعمالنا
+  page-footer: 
+    background: light
+    center: "Copyright 2025, Roya Consultancy"      
+  
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
+    theme:
+      - cosmos
+      - styles.scss
+    mainfont: Muna
+    page-layout: full
+
 
 editor: visual
 
