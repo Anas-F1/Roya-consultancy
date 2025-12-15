@@ -10,8 +10,8 @@
   .title-block-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
     padding-top: 130px;
     padding-bottom: 130px;
   }
@@ -23,13 +23,15 @@
 
   <!-- Actual content on top of the particles-->
   <div class="title-block-content">
+    <!-- 
     <img
       src="./logo.png"
       alt="logo of company"
       width="80px"
       height="80px"
-      style="margin-bottom: 20px"
+      style="margin-bottom: 20px; margin-right: 7em;"
     />
+    -->
     $if(title)$
     <h1 class="title">$title$</h1>
     $endif$ $if(subtitle)$

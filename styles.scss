@@ -9,12 +9,12 @@ $purple: #9158A2;
 $orange: #ad7237;
 
 // Base document colors
-$navbar-bg: $cream; // navbar
+$navbar-bg: #eff6ff; // navbar
 $navbar-fg: $dark-green; // navbar foreground elements
-$navbar-hl: $purple; // highlight color when hovering over navbar links
+$navbar-hl: #4f46e5 ; // highlight color when hovering over navbar links
 $body-bg: $light-green; // page background 
 $body-color: $gray; // page text 
-$footer-bg: $cream; // footer 
+$footer-bg: #eff6ff; // footer 
 $link-color: $purple; // hyperlinks 
 
 // Inline code
@@ -29,4 +29,42 @@ $code-block-bg: $cream; // code block background color
 .navbar .container-fluid {
   direction: ltr;
 }
+body {
+  background-color: #eff6ff;
+}
+.title {
+  font-size: 100px;
+  text-align: right;
+  margin-right: 1.25em; 
+  background: linear-gradient(to left, #2563eb, #9333ea, #4f46e5);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.subtitle{
+    font-size: 40px;
+    text-align: right;
+    margin-right: 3.2em;
+}
+p.subtitle {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    color: #64748b;
+}
+/* Font for English text */
+.lang-en {
+  font-family: "Roboto", sans-serif;
+}
 
+p {
+  font-size: 20px;
+  text-align: right;
+  color: #334155;
+}
+.title-block-content {
+}
+.nav-footer p {
+    font-size: 15px !important;
+    min-height: 3.5em;
+    color: #64748b;
+    text-align: center;
+}
