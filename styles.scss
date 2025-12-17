@@ -1,5 +1,5 @@
 /*-- scss:defaults --*/
-
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 // Colors
 $dark-green: #858E79;
 $light-green: #D1D9CE;
@@ -69,7 +69,7 @@ p {
 /* تحسين للجوال */
 @media (max-width: 430px) {
   .title-block-content {
-    font-family: 'Muna', sans-serif; // مهم لإعادة التأكيد
+    font-family: 'Amiri', sans-serif; // مهم لإعادة التأكيد
     padding-top: 60px;
     padding-bottom: 60px;
     justify-content: center;

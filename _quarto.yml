@@ -31,7 +31,7 @@ format:
     theme: 
     - cosmos
     - styles.scss
-    mainfont: Muna
+    mainfont: Amiri
     page-layout: full
 
 
