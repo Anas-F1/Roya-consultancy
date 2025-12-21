@@ -75,6 +75,84 @@ div.quarto-about-jolla {
     color: #64748b;
     text-align: center;
 }
+
+/* Font contact button */
+
+.hero-cta {
+  margin-top: 20px;
+  text-align: right;
+  
+}
+
+.contact-btn {
+  display: inline-block;
+   background: linear-gradient(
+    to left,
+    rgba(37, 99, 235, 0.85),  /* #2563eb */
+    rgba(79, 70, 229, 0.80)   /* #4f46e5 */
+  );
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  margin-right: 7em; 
+}
+
+#title-block-header {
+    height: 800px;
+}
+.full-width {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.section-alt {
+  background: rgba(136, 136, 136, 0.09);
+  padding: 100px 0;
+  margin-bottom: 2rem;
+}
+.section-alt h2 {
+  text-align: right;
+  margin-right: 4.3em;
+    
+}
+.section-alt p {
+  color: #334155;
+  font-size: 20px;
+  margin-right: 6em;
+  margin-left: 6em;
+}
+.intro-quote {
+  position: relative;
+  padding-left: 3.5rem;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+.intro-quote::before {
+    content: "”";
+    position: absolute;
+    right: 0.7em;
+    top: -4rem;
+    font-size: 6rem;
+    line-height: 1;
+    color: rgba(0,0,0,.15);
+    font-family: serif;
+}
+
+.intro-quote::after {
+    content: "“";
+    position: absolute;
+    bottom: -3.5rem;
+    left: 1.3em;
+    line-height: 1;
+    font-size: 6rem;
+    color: rgba(0,0,0,.12);
+    font-family: serif;
+}
 /* تحسين للجوال */
 @media (max-width: 430px) {
   .title-block-content {
@@ -107,4 +185,34 @@ div.quarto-about-jolla {
   .navbar-nav {
     flex-direction: column-reverse;
   }
+  .contact-btn {
+    margin-right: 0em;
+  }
+  .section-alt p {
+    color: #334155;
+    font-size: 18px;
+    margin-right: 6em;
+    margin-left: 0em; 
+}
+  .intro-quote::before {
+    content: "”";
+    position: absolute;
+    right: .7em;
+    top: -4rem;
+    font-size: 6rem;
+    line-height: 1;
+    color: rgba(0,0,0,.15);
+    font-family: serif;
+  }
+  .intro-quote::after {
+    content: "“";
+    position: absolute;
+    bottom: -5.5rem;
+    left: 0.4em;
+    line-height: 1;
+    font-size: 6rem;
+    color: rgba(0,0,0,.12);
+    font-family: serif;
+  }
+  
 }
