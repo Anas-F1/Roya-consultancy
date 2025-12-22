@@ -25,11 +25,25 @@ $code-color: $purple; // inline code text color
 $code-block-bg: $cream; // code block background color 
 
 /*-- scss:rules --*/
+@font-face {
+  font-family: "The Year of Handicrafts";
+  src: url("fonts/TheYearOfHandicrafts-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "The Year of Handicrafts";
+  src: url("fonts/TheYearOfHandicrafts-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Prevent RTL from reversing navbar layout */
 .navbar .container-fluid {
   direction: ltr;
 }
 body {
+  font-family: "The Year of Handicrafts";
   background-color: #eff6ff;
 }
 .title {
@@ -108,11 +122,17 @@ div.quarto-about-jolla {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
+.half-width {
+  max-width: 100%;
+  margin: 0 auto; /* توسيط */
+}
 
 .section-alt {
   background: rgba(136, 136, 136, 0.09);
   padding: 100px 0;
   margin-bottom: 2rem;
+  border-radius: 24px;
+
 }
 .section-alt h2 {
   text-align: right;
@@ -129,7 +149,6 @@ div.quarto-about-jolla {
   position: relative;
   padding-left: 3.5rem;
   font-size: 1.1rem;
-  line-height: 1.9;
 }
 
 .intro-quote::before {
@@ -146,17 +165,20 @@ div.quarto-about-jolla {
 .intro-quote::after {
     content: "“";
     position: absolute;
-    bottom: -3.5rem;
+    bottom: -5.5rem;
     left: 1.3em;
     line-height: 1;
     font-size: 6rem;
     color: rgba(0,0,0,.12);
     font-family: serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* تحسين للجوال */
 @media (max-width: 430px) {
   .title-block-content {
-    font-family: 'Amiri', sans-serif; // مهم لإعادة التأكيد
+    font-family: 'The Year of Handicrafts', sans-serif; // مهم لإعادة التأكيد
     padding-top: 60px;
     padding-bottom: 60px;
     justify-content: center;
@@ -191,13 +213,13 @@ div.quarto-about-jolla {
   .section-alt p {
     color: #334155;
     font-size: 18px;
-    margin-right: 6em;
+    margin-right: 3.5em;
     margin-left: 0em; 
 }
   .intro-quote::before {
     content: "”";
     position: absolute;
-    right: .7em;
+    right: .3em;
     top: -4rem;
     font-size: 6rem;
     line-height: 1;
@@ -207,7 +229,7 @@ div.quarto-about-jolla {
   .intro-quote::after {
     content: "“";
     position: absolute;
-    bottom: -5.5rem;
+    bottom: -6.5rem;
     left: 0.4em;
     line-height: 1;
     font-size: 6rem;

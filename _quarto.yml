@@ -15,7 +15,7 @@ website:
     logo: logo.png
     logo-alt: "شعار رؤية للاستشارات"
     right:
-      - href: about.qmd
+      - href: "#about"
         text: من نحن
       - href: our-work.qmd
         text: أعمالنا
