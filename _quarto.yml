@@ -6,6 +6,7 @@ resources:
 lang: ar
 dir: rtl
 website:
+  google-analytics: G-NY5RVR6K6G
   title: ""
   search: false
   favicon: logo.png
